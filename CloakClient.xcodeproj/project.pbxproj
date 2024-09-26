@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B8622FF2CA2E7E500071438 /* LogSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8622FE2CA2E7E500071438 /* LogSettingsView.swift */; };
+		5B8623012CA2E7F200071438 /* LogSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8623002CA2E7F200071438 /* LogSettingsVM.swift */; };
+		5B8623032CA2F36E00071438 /* View+isPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8623022CA2F36E00071438 /* View+isPreview.swift */; };
+		5B8623052CA2FB8A00071438 /* MenuButtonStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8623042CA2FB8A00071438 /* MenuButtonStateService.swift */; };
+		5BD283522C9FE10300F2CA80 /* CloakClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283512C9FE10300F2CA80 /* CloakClientApp.swift */; };
+		5BD283562C9FE10400F2CA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD283552C9FE10400F2CA80 /* Assets.xcassets */; };
+		5BD283592C9FE10400F2CA80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD283582C9FE10400F2CA80 /* Preview Assets.xcassets */; };
+		5BD283662C9FE16100F2CA80 /* ck-client-darwin-amd64-v2.9.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD283642C9FE16100F2CA80 /* ck-client-darwin-amd64-v2.9.0.dylib */; };
+		5BD283672C9FE16100F2CA80 /* ck-client-darwin-arm64-v2.9.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD283652C9FE16100F2CA80 /* ck-client-darwin-arm64-v2.9.0.dylib */; };
+		5BD2836D2C9FE27500F2CA80 /* BinaryFileExecutionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2836A2C9FE27500F2CA80 /* BinaryFileExecutionService.swift */; };
+		5BD2836E2C9FE27500F2CA80 /* ConfigFileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2836B2C9FE27500F2CA80 /* ConfigFileHelper.swift */; };
+		5BD2836F2C9FE27500F2CA80 /* ArchitectureInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2836C2C9FE27500F2CA80 /* ArchitectureInfoService.swift */; };
+		5BD283732C9FE29D00F2CA80 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283712C9FE29D00F2CA80 /* SettingsView.swift */; };
+		5BD283742C9FE29D00F2CA80 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283722C9FE29D00F2CA80 /* MenuView.swift */; };
+		5BD283782C9FE2BC00F2CA80 /* LaunchParametersSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283762C9FE2BC00F2CA80 /* LaunchParametersSettingsView.swift */; };
+		5BD283792C9FE2BC00F2CA80 /* ConfigurationFileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283772C9FE2BC00F2CA80 /* ConfigurationFileSettingsView.swift */; };
+		5BD2837F2CA006A100F2CA80 /* ConfigurationFileSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2837E2CA006A100F2CA80 /* ConfigurationFileSettingsVM.swift */; };
+		5BD283812CA01B2000F2CA80 /* JSONFileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283802CA01B2000F2CA80 /* JSONFileDocument.swift */; };
+		5BD283842CA021C900F2CA80 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283832CA021C900F2CA80 /* MenuViewModel.swift */; };
+		5BD2838E2CA05A2600F2CA80 /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD2838D2CA05A2600F2CA80 /* SettingsVM.swift */; };
+		5BD283912CA0682D00F2CA80 /* LaunchParametersSettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283902CA0682D00F2CA80 /* LaunchParametersSettingsVM.swift */; };
+		5BD283982CA074DE00F2CA80 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD283972CA074DE00F2CA80 /* UserDefaultsHelper.swift */; };
+		5BE612EE2CA19CDC0060F64D /* Binding+map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE612ED2CA19CDC0060F64D /* Binding+map.swift */; };
+		5BE612F02CA1D2D60060F64D /* WindowIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE612EF2CA1D2D60060F64D /* WindowIdentifiers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B8622FE2CA2E7E500071438 /* LogSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSettingsView.swift; sourceTree = "<group>"; };
+		5B8623002CA2E7F200071438 /* LogSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSettingsVM.swift; sourceTree = "<group>"; };
+		5B8623022CA2F36E00071438 /* View+isPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isPreview.swift"; sourceTree = "<group>"; };
+		5B8623042CA2FB8A00071438 /* MenuButtonStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonStateService.swift; sourceTree = "<group>"; };
+		5BD2834E2C9FE10300F2CA80 /* CloakClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloakClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD283512C9FE10300F2CA80 /* CloakClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloakClientApp.swift; sourceTree = "<group>"; };
+		5BD283552C9FE10400F2CA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BD283582C9FE10400F2CA80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BD2835A2C9FE10400F2CA80 /* CloakClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloakClient.entitlements; sourceTree = "<group>"; };
+		5BD283642C9FE16100F2CA80 /* ck-client-darwin-amd64-v2.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ck-client-darwin-amd64-v2.9.0.dylib"; sourceTree = "<group>"; };
+		5BD283652C9FE16100F2CA80 /* ck-client-darwin-arm64-v2.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ck-client-darwin-arm64-v2.9.0.dylib"; sourceTree = "<group>"; };
+		5BD2836A2C9FE27500F2CA80 /* BinaryFileExecutionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryFileExecutionService.swift; sourceTree = "<group>"; };
+		5BD2836B2C9FE27500F2CA80 /* ConfigFileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigFileHelper.swift; sourceTree = "<group>"; };
+		5BD2836C2C9FE27500F2CA80 /* ArchitectureInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchitectureInfoService.swift; sourceTree = "<group>"; };
+		5BD283712C9FE29D00F2CA80 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5BD283722C9FE29D00F2CA80 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		5BD283762C9FE2BC00F2CA80 /* LaunchParametersSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchParametersSettingsView.swift; sourceTree = "<group>"; };
+		5BD283772C9FE2BC00F2CA80 /* ConfigurationFileSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationFileSettingsView.swift; sourceTree = "<group>"; };
+		5BD2837E2CA006A100F2CA80 /* ConfigurationFileSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationFileSettingsVM.swift; sourceTree = "<group>"; };
+		5BD283802CA01B2000F2CA80 /* JSONFileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDocument.swift; sourceTree = "<group>"; };
+		5BD283832CA021C900F2CA80 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		5BD2838D2CA05A2600F2CA80 /* SettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
+		5BD283902CA0682D00F2CA80 /* LaunchParametersSettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchParametersSettingsVM.swift; sourceTree = "<group>"; };
+		5BD283972CA074DE00F2CA80 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		5BE612ED2CA19CDC0060F64D /* Binding+map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+map.swift"; sourceTree = "<group>"; };
+		5BE612EF2CA1D2D60060F64D /* WindowIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowIdentifiers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BD2834B2C9FE10300F2CA80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B8622FD2CA2E7AC00071438 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				5B8622FE2CA2E7E500071438 /* LogSettingsView.swift */,
+				5B8623002CA2E7F200071438 /* LogSettingsVM.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		5BD283452C9FE10300F2CA80 = {
+			isa = PBXGroup;
+			children = (
+				5BD283502C9FE10300F2CA80 /* CloakClient */,
+				5BD2834F2C9FE10300F2CA80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BD2834F2C9FE10300F2CA80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BD2834E2C9FE10300F2CA80 /* CloakClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BD283502C9FE10300F2CA80 /* CloakClient */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283602C9FE12A00F2CA80 /* App */,
+				5BD283622C9FE14100F2CA80 /* Internal */,
+				5BD283612C9FE13B00F2CA80 /* Binaries */,
+				5BD283632C9FE14600F2CA80 /* Resources */,
+				5BD283572C9FE10400F2CA80 /* Preview Content */,
+			);
+			path = CloakClient;
+			sourceTree = "<group>";
+		};
+		5BD283572C9FE10400F2CA80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283582C9FE10400F2CA80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BD283602C9FE12A00F2CA80 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283512C9FE10300F2CA80 /* CloakClientApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5BD283612C9FE13B00F2CA80 /* Binaries */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283642C9FE16100F2CA80 /* ck-client-darwin-amd64-v2.9.0.dylib */,
+				5BD283652C9FE16100F2CA80 /* ck-client-darwin-arm64-v2.9.0.dylib */,
+			);
+			path = Binaries;
+			sourceTree = "<group>";
+		};
+		5BD283622C9FE14100F2CA80 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283682C9FE26400F2CA80 /* Modules */,
+				5BD283992CA0773500F2CA80 /* Services */,
+				5BD283692C9FE26900F2CA80 /* Helpers */,
+				5BD283852CA0239E00F2CA80 /* Entities */,
+				5BE612EC2CA19CB80060F64D /* Extensions */,
+				5BE612F12CA1D3430060F64D /* GlobalConstants */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		5BD283632C9FE14600F2CA80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283552C9FE10400F2CA80 /* Assets.xcassets */,
+				5BD2835A2C9FE10400F2CA80 /* CloakClient.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BD283682C9FE26400F2CA80 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283702C9FE29300F2CA80 /* Menu */,
+				5BD283822CA021B500F2CA80 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5BD283692C9FE26900F2CA80 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283972CA074DE00F2CA80 /* UserDefaultsHelper.swift */,
+				5BD2836B2C9FE27500F2CA80 /* ConfigFileHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5BD283702C9FE29300F2CA80 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283722C9FE29D00F2CA80 /* MenuView.swift */,
+				5BD283832CA021C900F2CA80 /* MenuViewModel.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		5BD283752C9FE2AA00F2CA80 /* SettingsItems */ = {
+			isa = PBXGroup;
+			children = (
+				5BD2837D2CA0068F00F2CA80 /* ConfigurationFile */,
+				5BD2838F2CA0681900F2CA80 /* LaunchParameters */,
+				5B8622FD2CA2E7AC00071438 /* Log */,
+			);
+			path = SettingsItems;
+			sourceTree = "<group>";
+		};
+		5BD2837D2CA0068F00F2CA80 /* ConfigurationFile */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283772C9FE2BC00F2CA80 /* ConfigurationFileSettingsView.swift */,
+				5BD2837E2CA006A100F2CA80 /* ConfigurationFileSettingsVM.swift */,
+			);
+			path = ConfigurationFile;
+			sourceTree = "<group>";
+		};
+		5BD283822CA021B500F2CA80 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283752C9FE2AA00F2CA80 /* SettingsItems */,
+				5BD283712C9FE29D00F2CA80 /* SettingsView.swift */,
+				5BD2838D2CA05A2600F2CA80 /* SettingsVM.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5BD283852CA0239E00F2CA80 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283802CA01B2000F2CA80 /* JSONFileDocument.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5BD2838F2CA0681900F2CA80 /* LaunchParameters */ = {
+			isa = PBXGroup;
+			children = (
+				5BD283762C9FE2BC00F2CA80 /* LaunchParametersSettingsView.swift */,
+				5BD283902CA0682D00F2CA80 /* LaunchParametersSettingsVM.swift */,
+			);
+			path = LaunchParameters;
+			sourceTree = "<group>";
+		};
+		5BD283992CA0773500F2CA80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B8623042CA2FB8A00071438 /* MenuButtonStateService.swift */,
+				5BD2836C2C9FE27500F2CA80 /* ArchitectureInfoService.swift */,
+				5BD2836A2C9FE27500F2CA80 /* BinaryFileExecutionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5BE612EC2CA19CB80060F64D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BE612ED2CA19CDC0060F64D /* Binding+map.swift */,
+				5B8623022CA2F36E00071438 /* View+isPreview.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BE612F12CA1D3430060F64D /* GlobalConstants */ = {
+			isa = PBXGroup;
+			children = (
+				5BE612EF2CA1D2D60060F64D /* WindowIdentifiers.swift */,
+			);
+			path = GlobalConstants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BD2834D2C9FE10300F2CA80 /* CloakClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BD2835D2C9FE10400F2CA80 /* Build configuration list for PBXNativeTarget "CloakClient" */;
+			buildPhases = (
+				5BD2834A2C9FE10300F2CA80 /* Sources */,
+				5BD2834B2C9FE10300F2CA80 /* Frameworks */,
+				5BD2834C2C9FE10300F2CA80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloakClient;
+			packageProductDependencies = (
+			);
+			productName = CloakClient;
+			productReference = 5BD2834E2C9FE10300F2CA80 /* CloakClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BD283462C9FE10300F2CA80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					5BD2834D2C9FE10300F2CA80 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 5BD283492C9FE10300F2CA80 /* Build configuration list for PBXProject "CloakClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 5BD283452C9FE10300F2CA80;
+			packageReferences = (
+			);
+			productRefGroup = 5BD2834F2C9FE10300F2CA80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BD2834D2C9FE10300F2CA80 /* CloakClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BD2834C2C9FE10300F2CA80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD283662C9FE16100F2CA80 /* ck-client-darwin-amd64-v2.9.0.dylib in Resources */,
+				5BD283592C9FE10400F2CA80 /* Preview Assets.xcassets in Resources */,
+				5BD283672C9FE16100F2CA80 /* ck-client-darwin-arm64-v2.9.0.dylib in Resources */,
+				5BD283562C9FE10400F2CA80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BD2834A2C9FE10300F2CA80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE612EE2CA19CDC0060F64D /* Binding+map.swift in Sources */,
+				5B8623032CA2F36E00071438 /* View+isPreview.swift in Sources */,
+				5BD283732C9FE29D00F2CA80 /* SettingsView.swift in Sources */,
+				5B8622FF2CA2E7E500071438 /* LogSettingsView.swift in Sources */,
+				5BD283742C9FE29D00F2CA80 /* MenuView.swift in Sources */,
+				5BD283792C9FE2BC00F2CA80 /* ConfigurationFileSettingsView.swift in Sources */,
+				5BE612F02CA1D2D60060F64D /* WindowIdentifiers.swift in Sources */,
+				5BD283782C9FE2BC00F2CA80 /* LaunchParametersSettingsView.swift in Sources */,
+				5BD283812CA01B2000F2CA80 /* JSONFileDocument.swift in Sources */,
+				5BD283912CA0682D00F2CA80 /* LaunchParametersSettingsVM.swift in Sources */,
+				5BD2836F2C9FE27500F2CA80 /* ArchitectureInfoService.swift in Sources */,
+				5B8623012CA2E7F200071438 /* LogSettingsVM.swift in Sources */,
+				5BD2837F2CA006A100F2CA80 /* ConfigurationFileSettingsVM.swift in Sources */,
+				5BD283982CA074DE00F2CA80 /* UserDefaultsHelper.swift in Sources */,
+				5BD2836D2C9FE27500F2CA80 /* BinaryFileExecutionService.swift in Sources */,
+				5BD283522C9FE10300F2CA80 /* CloakClientApp.swift in Sources */,
+				5BD2836E2C9FE27500F2CA80 /* ConfigFileHelper.swift in Sources */,
+				5BD2838E2CA05A2600F2CA80 /* SettingsVM.swift in Sources */,
+				5B8623052CA2FB8A00071438 /* MenuButtonStateService.swift in Sources */,
+				5BD283842CA021C900F2CA80 /* MenuViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5BD2835B2C9FE10400F2CA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BD2835C2C9FE10400F2CA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5BD2835E2C9FE10400F2CA80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloakClient/Resources/CloakClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CloakClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.utility.CloakClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5BD2835F2C9FE10400F2CA80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloakClient/Resources/CloakClient.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CloakClient/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.utility.CloakClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BD283492C9FE10300F2CA80 /* Build configuration list for PBXProject "CloakClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD2835B2C9FE10400F2CA80 /* Debug */,
+				5BD2835C2C9FE10400F2CA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BD2835D2C9FE10400F2CA80 /* Build configuration list for PBXNativeTarget "CloakClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD2835E2C9FE10400F2CA80 /* Debug */,
+				5BD2835F2C9FE10400F2CA80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BD283462C9FE10300F2CA80 /* Project object */;
+}
